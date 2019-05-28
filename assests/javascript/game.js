@@ -27,8 +27,11 @@ $(".btn").on("click", function (){
     $(".randDest").text("Name: " + name + " " + "Miles: " + miles);
 })
 
-$(".card").on("click", function(){
-    $("")
+$(".card").on("click", function(){ //if one of the cards are clicked
+    var cardVal = $(this).val();
+    console.log(cardVal);
+
+    $(".result").text(cardVal); //update result
 })
 
 })
