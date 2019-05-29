@@ -1,10 +1,9 @@
 #bike,#walk,#drive,#fly{
     float: left;
-    width: 200px;
-    height: 200px;
 }
 .result{
-    padding-top: 100px;
+    background-color: blueviolet;
+    text-align: center;
 }    
 .randDest, #welcome{
     text-align: center;
@@ -12,15 +11,29 @@
 .button{
     text-align: center;
 }
+.card-body{
+    border: solid black;
+}
 .container{
+    border-radius: 20px;
     width: 1000px;
     height: 500px;
     background-color: aqua;
     padding: 20px;
+    margin-top: 20px;
+    position: relative;
 }
+.vehicles{
+    position: relative;
+}
+.container-result{
+
+    text-align: center;
+    bottom: 10px;
+}
+
 .card-text{
     text-align: center;
 }
-.main{
+/* .main{
     /* background: url("../images/background-image.jpg"); */
-}
