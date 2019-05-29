@@ -22,6 +22,8 @@ function generateRand(){
 
 $(".btn").on("click", function (){
     $(".result").text("");
+    $(".result").css("background-color", "blue");
+
     index = generateRand();
     name = dest.names[index];
     miles = dest.miles[index];
@@ -39,11 +41,13 @@ $(".card").on("click", function(){ //if one of the cards are clicked
     }
     else if (sum > miles){
         sum = 0;
-        $(".result").text("You went too far! Try again or try a new destination");
+        $(".result").text("You went too far! Try a new destination!");
+        $(".result").css("background-color", "red");
     }
     else if (sum === miles){
         sum = 0;
-        $(".result").text("You made it to your destination! Have a great vacation :)");
+        $(".result").text("You made it to your destination! Have a great time at " + name);
+        $(".result").css("background-color", "#1bb01b");
     }    
 })
 
