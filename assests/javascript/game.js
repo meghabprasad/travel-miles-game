@@ -13,6 +13,7 @@ var randIndex;
 var name;
 var miles;
 var index;
+var cardVal;
 function generateRand(){
     randIndex = Math.floor(Math.random()*dest.names.length);
     return randIndex;
@@ -28,9 +29,8 @@ $(".btn").on("click", function (){
 })
 
 $(".card").on("click", function(){ //if one of the cards are clicked
-    var cardVal = $(this).val();
+    cardVal = $(this).attr("value");
     console.log(cardVal);
-
     $(".result").text(cardVal); //update result
 })
 
