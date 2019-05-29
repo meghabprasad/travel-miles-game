@@ -31,8 +31,21 @@ $(".btn").on("click", function (){
 
 $(".card").on("click", function(){ //if one of the cards are clicked
     cardVal = parseInt($(this).attr("value"));
-    sum = sum + cardVal;
-    $(".result").text(sum); //update result
+    if (sum < miles){
+        sum = sum + cardVal;
+        console.log(sum);
+        $(".result").text(sum); //update result
+    }
+    else if (sum > miles){
+        sum = 0;
+        $(".result").text("You went too far! Try again!");
+    }
+    else if (sum === miles){
+        sum = 0;
+        $(".result").text("You made it to your destination! Have a great vacation :)");
+    }
+    
+
 })
 
 })
