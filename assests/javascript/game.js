@@ -14,6 +14,7 @@ var name;
 var miles;
 var index;
 var cardVal;
+var sum = 0;
 function generateRand(){
     randIndex = Math.floor(Math.random()*dest.names.length);
     return randIndex;
@@ -29,9 +30,9 @@ $(".btn").on("click", function (){
 })
 
 $(".card").on("click", function(){ //if one of the cards are clicked
-    cardVal = $(this).attr("value");
-    console.log(cardVal);
-    $(".result").text(cardVal); //update result
+    cardVal = parseInt($(this).attr("value"));
+    sum = sum + cardVal;
+    $(".result").text(sum); //update result
 })
 
 })
