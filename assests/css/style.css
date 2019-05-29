@@ -1,5 +1,11 @@
-#bike,#walk,#drive,#fly{
+#bike,#walk,#drive{
     float: left;
+}
+#bike,#walk,#drive{
+    margin-right: 10px;
+}
+#walk{
+    margin-left: 10px;
 }
 .result{
     background-color: blueviolet;
@@ -11,27 +17,28 @@
 .button{
     text-align: center;
 }
-.card-body{
+.btn{
+    margin-bottom: 10px;
+}
+/* .card-body{
     border: solid black;
+} */
+#welcome{
+    font-family: 'Monoton', cursive;
+    font-size: 60px;
+}
+.randDest{
+    font-family: 'Shadows Into Light Two', cursive;
 }
 .container{
     border-radius: 20px;
-    width: 1000px;
+    width: 1050px;
     height: 500px;
     background-color: aqua;
     padding: 20px;
     margin-top: 20px;
     position: relative;
 }
-.vehicles{
-    position: relative;
-}
-.container-result{
-
-    text-align: center;
-    bottom: 10px;
-}
-
 .card-text{
     text-align: center;
 }
