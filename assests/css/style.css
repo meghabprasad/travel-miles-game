@@ -4,7 +4,13 @@
     height: 200px;
 }
 .result{
-    float: clear;
+    padding-top: 100px;
+}    
+.randDest, #welcome{
+    text-align: center;
+}    
+.button{
+    text-align: center;
 }
 .container{
     width: 1000px;
