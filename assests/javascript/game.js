@@ -20,13 +20,17 @@ function generateRand(){
     return randIndex;
 }
 
-$(".btn").on("click", function (){
+function reset(){
     $(".result").text("");
     $(".result").css("background-color", "blue");
+    sum = 0;
+}
 
+$(".btn").on("click", function (){
     index = generateRand();
     name = dest.names[index];
     miles = dest.miles[index];
+    reset();
     // console.log(name);
     // console.log(miles);
     $(".randDest").text("Name: " + name + " " + "Miles: " + miles);
