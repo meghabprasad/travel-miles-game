@@ -31,7 +31,9 @@ $(".btn").on("click", function (){
     // console.log(miles);
     $(".randDest").text("Name: " + name + " " + "Miles: " + miles);
 })
-
+$(".card").on("hover", function(){
+    $(this).fadeOut(100);
+})
 $(".card").on("click", function(){ //if one of the cards are clicked
     cardVal = parseInt($(this).attr("value"));
     sum = sum + cardVal;
@@ -46,7 +48,7 @@ $(".card").on("click", function(){ //if one of the cards are clicked
     }
     else if (sum === miles){
         sum = 0;
-        $(".result").text("You made it to your destination! Have a great time at " + name);
+        $(".result").text("You made it to your destination! Have a great time in " + name + "!");
         $(".result").css("background-color", "#1bb01b");
     }    
 })

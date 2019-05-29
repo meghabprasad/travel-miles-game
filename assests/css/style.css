@@ -9,11 +9,12 @@
 }
 .result{
     border-radius: 20px;
-    background-color: #28a745;
+    background-color:#007bff;
     text-align: center;
     margin-top: 20px;
     color: white;
     font-family: 'Sintony', sans-serif;
+    opacity: 0.7;
 
 }    
 .randDest, #welcome{
@@ -21,6 +22,7 @@
 }    
 .button{
     text-align: center;
+    
 }
 .btn{
     margin-bottom: 10px;
@@ -40,7 +42,9 @@
     border-radius: 20px;
     width: 1050px;
     height: 650px;
-    background-color: aqua;
+    background-size: contain;
+    background-position: center;
+    background: url("https://media.boingboing.net/wp-content/uploads/2018/05/cool-background1.png");
     padding: 20px;
     margin-top: 20px;
     position: relative;
@@ -49,6 +53,11 @@
     text-align: center;
     font-family: 'Sintony', sans-serif;
     font-size: 30px;
+    color: white;
+    text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.card:hover{
+    border: 5px solid blue;
 }
 
 /* .main{
