@@ -1,3 +1,14 @@
 #bike,#walk,#drive,#fly{
     float: left;
+    width: 200px;
+    height: 200px;
+}
+.result{
+    float: clear;
+}
+.container{
+    width: 1000px;
+}
+.card-text{
+    text-align: center;
 }
